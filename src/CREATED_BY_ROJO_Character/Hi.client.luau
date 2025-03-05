@@ -8,3 +8,13 @@ UIS.InputBegan:Connect(function(input, gameProcessedEvent)
         print("Clicked A WOW")
     end
 end)
+
+-- Adding new Feature 🎉
+UIS.InputBegan:Connect(function(input, gameProcessedEvent)
+    if gameProcessedEvent then
+        return
+    end
+    if input.KeyCode ==Enum.KeyCode.B then
+        print("WOW B Was Pressed")
+    end
+end)
